@@ -1,0 +1,222 @@
+/* styles.css */
+
+header {
+ position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #002060;
+    color: white;
+    padding: 1rem 0;
+text-align: center;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+     color: #333; 
+    line-height: 1.6;
+    background: linear-gradient(to right, #F2F2F2, #D9D9D9);
+       color: #fff;
+        margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1abc9c;
+}
+
+/* Home Section */
+
+#home {
+   background: #E1EFF2;
+    color: #002060;
+    text-align: center;
+    padding: 6rem 0;
+border: 2px solid #002060;
+    border-radius: 8px;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+ .btn {
+    display: inline-block;
+    background: #002060;
+    color: #C2CD23;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+ .btn:hover {
+  color: #002060;
+  transform: scale(1.05);
+    background: #C2CD23;
+}
+
+
+
+li { 
+    list-style-type: none; 
+    color: #002060; 
+}
+
+img {
+    border-radius: 50%; /* Makes the image circular */
+}
+
+/* Courses Section */
+.section {
+    padding: 6rem 20px;
+    text-align: center;
+color: #002060;
+border: 2px solid #002060;
+    border-radius: 8px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    
+}
+.section h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section p {
+    max-width: 800px;
+    margin: 0 auto;	
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #008080
+
+
+}
+
+.course-card {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+     background: #E1EFF2;
+    transition:  width 2s;
+    justify-content: center; /* Aligns content within the card */
+    align-items: center;
+
+}
+
+
+.flip-card {
+  background-color: #E1EFF2;
+  width: auto;
+  height: 200px;
+  padding: 1.5rem;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  transition:  width 2s;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+ .card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .card-inner {
+    transform: rotateY(180deg); /* Flips the card on hover */
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the back side when not flipped */   
+    border: 1px solid #f1f1f1;
+    border-radius: 8px; 
+}
+
+.card-front {
+    background: #002060; /* Front face background color */
+    color: #C2CD23;
+}
+
+.card-back {
+    background: #C2CD23; /* Back face background color */
+    color: #002060;
+    transform: rotateY(180deg); /* Initially flipped to the back */
+}
+ 
+
+.course-card:hover {
+    box-shadow: 1 10px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
